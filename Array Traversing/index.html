@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+     <h3>arr = [4, 10, 25, 5, 0, 2, 9, 3, 1, 7]</h3>
+     <p>To find the element of array</p>
+    <input type="number" id="element" placeholder="Enter any number">
+    <button onclick="getElemnet()">Get Element</button>
+
+    <script>
+        let arr = [4, 10, 25, 5, 0, 2, 9, 3, 1, 7]
+
+        function getElemnet() {
+
+            let element = document.getElementById("element").value;
+            
+            if (element < arr.length && element>=0) {
+                alert(arr[element]);
+            }else{
+                alert("please enter valid input");
+            }
+        }
+
+       
+
+    </script>
+</body>
+
+</html>
