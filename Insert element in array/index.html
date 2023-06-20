@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>arr = [30, 60, 40, 67, 98, 34, 53]</h2> <br>
+
+    <input type="text" name="" id="position" placeholder="Enter Position">
+    <input type="text" name="" id="newElement" placeholder="Enter Element">
+    <button onclick="getElement()">InsertElement</button>
+
+    <div id="addElement"></div>
+
+
+    <script>
+
+
+
+        function getElement() {
+        let arr = [30, 60, 40, 67, 98, 34, 53]
+
+            let newElement = document.getElementById("newElement").value;
+            let Position = document.getElementById("position").value;
+
+            for (let i = arr.length - 1; i >= 0; i--) {
+                if (i >= Position) {
+                    arr[i + 1] = arr[i];
+                    if (i == Position) {
+                        arr[i] = newElement;
+
+                    }
+                }
+            }
+            console.log(arr)
+
+        }
+
+
+    </script>
+</body>
+
+</html>
