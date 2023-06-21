@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+          <h2>arr = [20,50,80,90,70,50,10]</h2>    
+    <input type="text" id="position" placeholder="enter position">
+    <button onclick="xyz()">Remove element</button>
+
+
+
+    <script>
+
+
+        function xyz() {
+          let arr = [20,50,80,90,70,50,10]
+         let position = document.getElementById("position").value;
+
+         position = parseInt(position);
+
+
+          for(let i = position; i<arr.length-1; i++){
+            arr[i] = arr[i+1]
+          }
+          arr.length = arr.length-1
+          console.log(arr)
+        }
+          
+
+    </script>
+
+</body>
+
+</html>
