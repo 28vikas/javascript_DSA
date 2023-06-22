@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>arr = [10,50,20,80,70,60]</h3>
+    <p>to know the position of number in above array</p>
+
+    <input id="elem" type="text" placeholder="enter the number">
+    <button onclick="searchxyz()">search number</button>
+
+
+    <script>
+
+        function searchxyz() {
+            
+            let elem = document.getElementById("elem").value
+
+            let arr = [10, 50, 20, 80, 70, 60]
+
+            let index = undefined;
+
+            for (let i = 0; i < arr.length; i++) {
+
+                if (arr[i] ==elem) {
+                    index = i;
+                    break;
+                }
+            }
+        console.log(index);
+
+        }
+
+        
+
+    </script>
+
+</body>
+
+</html>
